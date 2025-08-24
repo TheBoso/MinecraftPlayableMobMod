@@ -74,7 +74,7 @@ public abstract class MixinLivingEntity extends Entity implements IBosoRideable,
             return Vec3.ZERO;
         }
         */
-            float f = player.xxa;
+            float f = player.xxa * 0.5F;
             float f1 = player.zza;
             if (f1 <= 0.0F)
             {
