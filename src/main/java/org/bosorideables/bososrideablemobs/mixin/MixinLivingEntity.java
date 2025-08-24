@@ -59,7 +59,7 @@ public abstract class MixinLivingEntity extends Entity implements IBosoRideable,
     @Inject(method = "getRiddenSpeed", at = @At("HEAD"), cancellable = true)
     protected void getRiddenSpeed(Player player, CallbackInfoReturnable<Float> cir)
     {
-        cir.setReturnValue((float)getAttributeValue(Attributes.MOVEMENT_SPEED));
+        cir.setReturnValue((float)getAttributeValue(Attributes.MOVEMENT_SPEED) * 0.5f);
     }
 
 
